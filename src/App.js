@@ -13,7 +13,7 @@ function App() {
         <span>
           <BaseText text="Frontend developer, UX architect and Javascript engineer," />{" "}
           <Label text="Photochromic Lens" />{" "}
-          <BaseText text="enthusiast, practicing minimalist, and " />
+          <BaseText text="enthusiast, practicing minimalist, and " /> <br/>
           <Label text="Pop Music & Jazz lover" />
           <BaseText text=" in search of flow." />
         </span>
