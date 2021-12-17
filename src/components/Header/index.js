@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "../Logo/Logo";
-import DarkToggle from "../DarkToggle/DarkToggle";
+import Logo from "../Logo";
+import DarkToggle from "../DarkToggle";
 import "./Header.css";
 
 function Header() {
