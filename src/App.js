@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import BaseText from "./components/BaseText";
+import H1 from "./components/H1";
+import Header from "./components/Header";
+import Label from "./components/Label";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <div className="body">
+        <H1 text="I'm Abdurrahman Sogbesan" />
+        <span>
+          <BaseText text="Frontend developer, UX architect and Javascript engineer," />{" "}
+          <Label text="Photochromic Lens" />{" "}
+          <BaseText text="enthusiast, practicing minimalist, and " /> <br />
+          <Label text="Pop Music & Jazz lover" />
+          <BaseText text=" in search of flow." />
+        </span>
+      </div>
     </div>
   );
 }
