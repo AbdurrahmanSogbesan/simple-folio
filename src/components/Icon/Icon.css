@@ -1,0 +1,10 @@
+.iconContainer {
+  padding: 0 12px;
+  transition: all 1s ease 0s;
+}
+
+.iconContainer:hover {
+    stroke: #545454;
+    stroke-width: 1px;
+    stroke-opacity: 0.8;
+}

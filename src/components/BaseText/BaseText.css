@@ -4,3 +4,9 @@ span {
   font-weight: 500;
   color: #545454;
 }
+
+@media (max-width:992px) {
+  span {
+    line-height: 3;
+  }
+}
