@@ -1,8 +1,8 @@
 import "./App.css";
 import BaseText from "./components/BaseText";
+import Footer from "./components/Footer";
 import H1 from "./components/H1";
 import Header from "./components/Header";
-import Icon from "./components/Icon/Icon";
 import Label from "./components/Label";
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
           <Label text="Pop Music & Jazz lover" />
           <BaseText text=" in search of flow." />
         </span>
+        <br/>
         <span>
           <BaseText text="Working with my hands to make magic happen on the internet. View my " />
           <Label text="Projects" />
@@ -31,12 +32,7 @@ function App() {
           <Label text="abdurrahman0803@gmail.com" />
           <BaseText text="." />
         </span>
-        <Icon icon="twitter" />
-        <Icon icon="facebook" />
-        <Icon icon="linkedin" />
-        <Icon icon="github" />
-        <Icon icon="dribbble" />
-        <Icon icon="instagram" />
+        <Footer linkText="See More About Me" />
       </div>
     </div>
   );
