@@ -5,6 +5,7 @@ const icons = {
   github: require("./github").default,
   dribbble: require("./dribbble").default,
   instagram: require("./instagram").default,
+  arrow: require("./arrow").default,
 };
 
 export default icons;

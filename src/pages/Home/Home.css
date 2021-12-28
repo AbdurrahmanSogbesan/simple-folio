@@ -1,0 +1,13 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16% 0 20%;
+}
+
+@media (max-width: 992px) {
+  .body {
+    padding: 0px;
+    margin: 28px 33px;
+  }
+}
