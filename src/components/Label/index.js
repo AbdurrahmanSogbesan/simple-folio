@@ -1,10 +1,8 @@
 import React from "react";
 import "./Label.css";
 
-function Label({ text }) {
-  return (
-      <span className="label">{text}</span>
-  );
+function Label({ text, className = "label" }) {
+  return <span className={className}>{text}</span>;
 }
 
 export default Label;
