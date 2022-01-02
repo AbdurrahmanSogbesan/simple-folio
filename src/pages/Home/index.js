@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import H1 from "../../components/H1";
 import Header from "../../components/Header";
 import Label from "../../components/Label";
+import ProjectCard from "../../components/ProjectCard";
 import "./Home.css";
 
 function Home() {
@@ -32,6 +33,15 @@ function Home() {
           <BaseText text=", or send me an email at " />
           <Label text="abdurrahman0803@gmail.com" />
           <BaseText text="." />
+          <ProjectCard
+            title="Piggment"
+            description="The Gradients and colours for the next smart creator
+            "
+            label1="React"
+            label2="Sass & CSS"
+            label3="Javascript"
+            label4="Context"
+          />
         </span>
         <Footer linkText="See More About Me" />
       </div>

@@ -1,5 +1,5 @@
 .projectCard {
-  width: 100%;
+  width: 448px;
   height: 310px;
   margin: 0 0 1.5em;
   cursor: pointer;
@@ -35,7 +35,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
+  background-image: linear-gradient(transparent, black);
   transition: opacity 0.5s ease-in;
 }
 
@@ -53,6 +53,10 @@ img {
 
 @media (max-width: 992px) {
   .projectCard__content {
+    opacity: 1;
+  }
+  .projectCard__overlay {
+    background-image: linear-gradient(transparent, black);
     opacity: 1;
   }
 }
