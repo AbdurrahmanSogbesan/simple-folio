@@ -3,7 +3,7 @@ import BaseText from "../BaseText";
 import Label from "../Label";
 import "./ProjectCard.css";
 
-function ProjectCard({ title, description, label1, label2, label3, label4 }) {
+function ProjectCard({ title, description, labels }) {
   return (
     <div className="projectCard">
       <div className="projectCard__overlay"></div>
@@ -11,10 +11,9 @@ function ProjectCard({ title, description, label1, label2, label3, label4 }) {
         <span className="projectCard__title">{title}</span>
         <BaseText className="projectBaseText" text={description} />
         <div className="labelRow">
-          <Label className="projectCard__label" text={label1} />
-          <Label className="projectCard__label" text={label2} />
-          <Label className="projectCard__label" text={label3} />
-          <Label className="projectCard__label" text={label4} />
+          {labels.map((text) => (
+            <Label className="projectCard__label" text={text} />
+          ))}
         </div>
       </div>
     </div>
