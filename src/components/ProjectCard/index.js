@@ -6,6 +6,7 @@ import "./ProjectCard.css";
 function ProjectCard() {
   return (
     <div className="projectCard">
+      <div className="projectCard__overlay"></div>
       <div className="projectCard__content">
         <span className="projectCard__title">Piggment</span>
         <BaseText
