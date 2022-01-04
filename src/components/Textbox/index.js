@@ -1,7 +1,7 @@
 import React from "react";
-import "./Textbox.css";
+import "./TextBox.css";
 
-function Textbox({ name, type, placeholder }) {
+function TextBox({ name, type, placeholder }) {
   return (
     <input
       name={name}
@@ -13,4 +13,4 @@ function Textbox({ name, type, placeholder }) {
   );
 }
 
-export default Textbox;
+export default TextBox;
