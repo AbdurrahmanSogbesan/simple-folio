@@ -1,5 +1,6 @@
 import React from "react";
 import BaseText from "../../components/BaseText";
+import Button from "../../components/Button";
 import Footer from "../../components/Footer";
 import H1 from "../../components/H1";
 import Header from "../../components/Header";
@@ -32,6 +33,7 @@ function Home() {
           <BaseText text=", or send me an email at " />
           <Label text="abdurrahman0803@gmail.com" />
           <BaseText text="." />
+          <Button text="Send Message" />
         </span>
         <Footer linkText="See More About Me" />
       </div>
