@@ -1,14 +1,14 @@
 import React from "react";
 import "./TextBox.css";
 
-function TextBox({ name, type, placeholder, ariaRequired, onChange }) {
+function TextBox({ name, type, placeholder, required, onChange }) {
   return (
     <input
       name={name}
       type={type}
       placeholder={placeholder}
-      aria-required={ariaRequired}
-      required
+      aria-required="true"
+      required={required}
       onChange={onChange}
     />
   );
