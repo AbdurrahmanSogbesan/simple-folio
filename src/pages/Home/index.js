@@ -13,9 +13,9 @@ function Home() {
       <div className="body">
         <H1 text="I'm Abdurrahman Sogbesan" />
         <span>
-          <BaseText text="Frontend developer, UX architect and Javascript engineer," />
+          <BaseText text="Frontend developer, UX architect and Javascript engineer, " />
           <Label text="Photochromic Lens" />
-          <BaseText text="enthusiast, practicing minimalist, and " />
+          <BaseText text=" enthusiast, practicing minimalist, and " />
           <Label text="Pop Music & Jazz lover" />
           <BaseText text=" in search of flow." />
         </span>
