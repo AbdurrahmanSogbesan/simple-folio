@@ -14,6 +14,7 @@
   color: white;
 }
 
+
 .projectFilter {
   font-size: 13.9px;
   color: #545454;
@@ -39,4 +40,18 @@
   cursor: pointer;
   padding: 5px 22px;
   border-radius: 5px;
+}
+
+.projectCard__label {
+  background: rgb(105, 104, 105);
+  padding: 7px 12px;
+  opacity: 0.9;
+  border-radius: 50px;
+  text-transform: capitalize;
+  font-size: 11px;
+  margin-right: 6px;
+  margin-bottom: 0.25rem;
+  color: #ffffff;
+  font-weight: 500;
+
 }
