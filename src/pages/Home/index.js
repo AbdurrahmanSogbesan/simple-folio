@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 import H1 from "../../components/H1";
 import Header from "../../components/Header";
 import Label from "../../components/Label";
-import ProjectFilter from "../../components/ProjectFilter";
+import Timeline from "../../components/Timeline";
 import "./Home.css";
 
 function Home() {
@@ -33,7 +33,7 @@ function Home() {
           <BaseText text=", or send me an email at " />
           <Label text="abdurrahman0803@gmail.com" />
           <BaseText text="." />
-          <ProjectFilter
+          {/* <ProjectFilter
             filters={[
               "All",
               "Projects",
@@ -41,7 +41,7 @@ function Home() {
               "Open  Source",
               "Designs",
             ]}
-          />
+          /> */}
         </span>
         <Footer linkText="See More About Me" />
       </div>
