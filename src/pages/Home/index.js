@@ -4,7 +4,6 @@ import Footer from "../../components/Footer";
 import H1 from "../../components/H1";
 import Header from "../../components/Header";
 import Label from "../../components/Label";
-import Timeline from "../../components/Timeline";
 import "./Home.css";
 
 function Home() {
