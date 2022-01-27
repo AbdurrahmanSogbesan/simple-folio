@@ -35,6 +35,12 @@
   flex-direction: row;
 }
 
+.bigTitle {
+  font-size: 17.6px;
+  margin-bottom: 45px;
+  font-weight: 500;
+}
+
 /* Title of the card */
 .title {
   font-size: 1.011em;
@@ -49,6 +55,7 @@
 .subtitle {
   font-size: 80%;
   margin-top: 3px;
+  margin-left: 2px;
 }
 
 .title:hover {
