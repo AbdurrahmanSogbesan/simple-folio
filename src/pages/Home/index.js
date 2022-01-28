@@ -32,17 +32,8 @@ function Home() {
           <BaseText text=", or send me an email at " />
           <Label text="abdurrahman0803@gmail.com" />
           <BaseText text="." />
-          {/* <ProjectFilter
-            filters={[
-              "All",
-              "Projects",
-              "Dev Tools",
-              "Open  Source",
-              "Designs",
-            ]}
-          /> */}
         </span>
-        <Footer linkText="See More About Me" />
+        <Footer navTo="/about" linkText="See More About Me" />
       </div>
     </div>
   );

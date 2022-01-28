@@ -33,7 +33,7 @@ function Contact() {
           />
           <Button text="Send Message" />
         </form>
-        <Footer linkText="Go Back Home" />
+        <Footer navTo="/" linkText="Go Back Home" />
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ function About() {
       <Header />
       <div className="body">
         <Timeline />
-        <Footer linkText="Lets Continue To Projects" />
+        <Footer navTo="/projects" linkText="Lets Continue To Projects" />
       </div>
     </div>
   );

@@ -3,11 +3,24 @@
   flex-direction: column;
   justify-content: center;
   padding: 0 16% 3% 20%;
+  animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }
 
 @media (max-width: 992px) {
   .body {
-    padding: 0px;
+    padding: 0 0 40px 0;
     margin: 28px 33px;
   }
 }

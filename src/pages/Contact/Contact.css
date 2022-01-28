@@ -1,17 +1,30 @@
 .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 16% 3% 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16% 3% 20%;
+  animation: transitionIn 0.75s;
+}
+
+form {
+  margin-top: 30px;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
   }
 
-  form {
-      margin-top: 30px;
+  to {
+    opacity: 1;
+    transform: rotateX(0);
   }
-  
-  @media (max-width: 992px) {
-    .contact {
-      padding: 0px;
-      margin: 28px 33px;
-    }
+}
+
+@media (max-width: 992px) {
+  .contact {
+    padding: 0px;
+    margin: 28px 33px;
   }
+}

@@ -52,6 +52,9 @@ img {
 }
 
 @media (max-width: 992px) {
+  .projectCard {
+    width: 510px;
+  }
   .projectCard__content {
     opacity: 1;
   }
