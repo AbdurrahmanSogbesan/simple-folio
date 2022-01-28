@@ -2,17 +2,28 @@ import React from "react";
 import Logo from "../Logo";
 import DarkToggle from "../DarkToggle";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="header">
-      <Logo />
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <Logo />
+      </Link>
       <div className="header__right">
         <div className="header__links">
-          <span className="header__link">About</span>
-          <span className="header__link">Projects</span>
-          <span className="header__link">Resume</span>
-          <span className="header__link">Contact</span>
+          <Link to="/about" style={{ textDecoration: "none" }}>
+            <span className="header__link">About</span>
+          </Link>
+          <Link to="/projects" style={{ textDecoration: "none" }}>
+            <span className="header__link">Projects</span>
+          </Link>
+          <Link to="/resume" style={{ textDecoration: "none" }}>
+            <span className="header__link">Resume</span>
+          </Link>
+          <Link to="/contact" style={{ textDecoration: "none" }}>
+            <span className="header__link">Contact</span>
+          </Link>
           <DarkToggle />
         </div>
         <div className="header__hamburgerContainer">
