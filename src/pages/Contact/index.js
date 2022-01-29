@@ -6,8 +6,22 @@ import Header from "../../components/Header";
 import TextBox from "../../components/TextBox";
 import TextArea from "../../components/TextArea";
 import Button from "../../components/Button";
+import { useForm, ValidationError } from "@formspree/react";
+import { Link } from "react-router-dom";
 
 function Contact() {
+  const [state, handleSubmit] = useForm("xwkylpez");
+  if (state.succeeded) {
+    return (
+      <div className="contact">
+        <p>Thanks for reaching out!</p>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <p>Go back Home!</p>
+        </Link>
+      </div>
+    );
+  }
+
   return (
     <div>
       <Header />
@@ -17,21 +31,28 @@ function Contact() {
           Get in touch or shoot an email directly on
           <strong> abdurrahman0803@gmail.com</strong>
         </p>
-        <form action="submit">
+        <form action="submit" onSubmit={handleSubmit}>
           <TextBox name="name" type="text" placeholder="Name" required="true" />
+          <ValidationError prefix="Name" field="name" errors={state.errors} />
           <TextBox
             name="email"
-            type="text"
+            type="email"
             placeholder="Email"
             required="true"
           />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
           <TextArea
             name="message"
             placeholder="Message"
             rows="5"
             required="true"
           />
-          <Button text="Send Message" />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
+          <Button disabled={state.submitting} text="Send Message" />
         </form>
         <Footer navTo="/" linkText="Go Back Home" />
       </div>
